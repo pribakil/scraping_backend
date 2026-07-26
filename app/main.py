@@ -1,8 +1,8 @@
 
 from fastapi import FastAPI, Query
-from services.general import get_all_links_by_url
-from services.get_jobs import get_mediacd_jobs_by_search_key
-from tutorial.tutorial.utils import get_jobs
+from app.services.general import get_all_links_by_url
+from app.services.get_jobs import get_mediacd_jobs_by_search_key
+from app.tutorial.tutorial.utils import get_jobs
 from typing import Annotated
 
 app = FastAPI()
