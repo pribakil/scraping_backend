@@ -1,6 +1,6 @@
 import scrapy
 
-from app.tutorial.tutorial.utils import parse_emploicd_job_to_dict, parse_mediacongo_job_to_dict, get_parsed_unique_jobs
+from tutorial.utils import parse_emploicd_job_to_dict, parse_mediacongo_job_to_dict, get_parsed_unique_jobs
 
 
 class JobsSpider(scrapy.Spider):
@@ -11,6 +11,7 @@ class JobsSpider(scrapy.Spider):
                 'format': 'json',
                 'encoding': 'utf8',
                 'indent': 4,
+                'overwrite': True
             },
         },
     }
